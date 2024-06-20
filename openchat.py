@@ -3,6 +3,12 @@ import streamlit as st
 
 st.title("Willkommen bei Charisma GPT")
 
+st.write("""
+Dieser Chatbot wurde von Stefan Berger (Universität Groningen) programmiert. 
+Deine Interaktionen mit dem Chatbot sind vollkommen anonym und werden nicht ausgelesen. 
+Viel Spass beim Chatten!
+""")
+
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
